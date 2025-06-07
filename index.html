@@ -2,948 +2,587 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna - AI Healthcare Assistant for Medicare Advantage</title>
+    <meta name="description" content="Anna is an AI-powered healthcare assistant that helps Medicare Advantage plans improve member engagement through intelligent SMS and voice conversations.">
     
-    <!-- Basic SEO Meta Tags -->
-    <title>Anna - AI Medical Assistant for Medicare Advantage</title>
-    <meta name="description" content="Anna is a HIPAA-compliant AI SMS assistant designed to optimize healthcare outcomes, improve STAR ratings, and drive revenue growth for regional Medicare Advantage plans.">
-    <meta name="keywords" content="Medicare Advantage, AI assistant, healthcare technology, STAR ratings, patient engagement, SMS healthcare">
-    <meta name="author" content="Tevere Tech">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Open Graph Meta Tags for social sharing -->
-    <meta property="og:title" content="Anna - AI Medical Assistant for Medicare Advantage">
-    <meta property="og:description" content="AI-powered SMS assistant improving outcomes and ratings for Medicare Advantage plans.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80">
-    <meta property="og:url" content="https://anna-health.com">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Anna - AI Medical Assistant for Medicare Advantage">
-    <meta name="twitter:description" content="AI-powered SMS assistant improving outcomes and ratings for Medicare Advantage plans.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
-    <link rel="stylesheet" href="style.css">
-    <!-- Replace Font Awesome kit with standard CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Canonical URL to prevent duplicate content issues -->
-    <link rel="canonical" href="https://anna-health.com">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-to-content">Skip to main content</a>
-    
     <!-- Navigation -->
-    <header>
-        <nav class="navbar" aria-label="Main Navigation">
-            <div class="container">
-                <div class="logo" role="banner">Anna<span class="dot">.</span></div>
-                <div class="menu-toggle" id="mobile-menu" aria-expanded="false" aria-label="Toggle menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <ul class="nav-menu" role="menu">
-                    <li role="none"><a href="#features" class="nav-link" role="menuitem">Features</a></li>
-                    <li role="none"><a href="#technology" class="nav-link" role="menuitem">Technology</a></li>
-                    <li role="none"><a href="#process" class="nav-link" role="menuitem">How It Works</a></li>
-                    <li role="none"><a href="#advantages" class="nav-link" role="menuitem">Benefits</a></li>
-                    <li role="none"><a href="#pilot" class="nav-link" role="menuitem">Pilot Program</a></li>
-                    <li role="none"><a href="#demo" class="nav-link cta-small" role="menuitem">Get Started</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main id="main-content">
-        <!-- Hero Section -->
-        <section id="hero" aria-labelledby="hero-heading">
-            <div class="container">
-                <div class="hero-grid">
-                    <div class="hero-content">
-                        <span class="badge">Medical AI Innovation</span>
-                        <h1 id="hero-heading">Anna: AI-Powered SMS Assistant for Medicare Advantage</h1>
-                        <p class="hero-subtitle">Collaborative solutions with insurance providers to enhance patient experience through intelligent healthcare conversations.</p>
-                        
-                        <!-- Replace hero-stats with clear metrics -->
-                        <div class="hero-stats">
-                            <div class="stat-item">
-                                <span class="stat-text">Custom Solutions</span>
-                                <span class="stat-subtitle">Tailored to each provider's unique needs</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-text">Partnership Approach</span>
-                                <span class="stat-subtitle">Co-developed with insurance providers</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-text">Ongoing Support</span>
-                                <span class="stat-subtitle">Not just a product, but a service</span>
-                            </div>
-                        </div>
-                        
-                        <div class="hero-buttons">
-                            <a href="#demo" class="cta-button">Schedule a Demo</a>
-                            <a href="#features" class="secondary-button">Explore Features</a>
-                        </div>
-                        <div class="launch-tag">
-                            <div class="launch-badge">
-                                <i class="fas fa-rocket" aria-hidden="true"></i>
-                                <span>Limited pilot program now accepting partners</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-image">
-                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Anna in action" class="main-image" loading="lazy" width="800" height="600">
-                        <div class="floating-card card-1">
-                            <i class="fas fa-calendar-check" aria-hidden="true"></i>
-                            <span>Appointment scheduled!</span>
-                        </div>
-                        <div class="floating-card card-2">
-                            <i class="fas fa-pills" aria-hidden="true"></i>
-                            <span>Medication reminder sent</span>
-                        </div>
-                        <div class="floating-card card-3">
-                            <i class="fas fa-handshake" aria-hidden="true"></i>
-                            <span>Custom solutions delivered</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-wave">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
-                    <path fill="#f8f9fa" fill-opacity="1" d="M0,96L80,85.3C160,75,320,53,480,53.3C640,53,800,75,960,80C1120,85,1280,75,1360,69.3L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
-                </svg>
-            </div>
-        </section>
-
-        <!-- Target Market Section -->
-        <section id="target-market" class="fade-in">
-            <div class="container">
-                <p class="target-text">Specifically designed for regional Medicare Advantage plans</p>
-                <div class="target-grid">
-                    <div class="target-item">
-                        <i class="fas fa-building"></i>
-                        <span>Regional MA Plans</span>
-                    </div>
-                    <div class="target-item">
-                        <i class="fas fa-user-md"></i>
-                        <span>Provider-Sponsored MA</span>
-                    </div>
-                    <div class="target-item">
-                        <i class="fas fa-chart-pie"></i>
-                        <span>STAR Rating Focused</span>
-                    </div>
-                    <div class="target-item">
-                        <i class="fas fa-users"></i>
-                        <span>Membership-First Approach</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section id="features" class="fade-in">
-            <div class="container">
-                <div class="section-header scale-in">
-                    <span class="section-tag">Core Features</span>
-                    <h2>Anna's Capabilities</h2>
-                    <p class="section-intro">Comprehensive tools designed to enhance Medicare Advantage performance through SMS-based patient engagement</p>
-                </div>
-                <div class="features-grid">
-                    <div class="feature hidden">
-                        <div class="feature-icon">
-                            <i class="fas fa-calendar-alt"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Preventive Care Engagement</h3>
-                            <p>Sends personalized reminders for screenings like mammograms and colonoscopies while educating patients based on their medical history.</p>
-                        </div>
-                    </div>
-                    <div class="feature hidden delay-1">
-                        <div class="feature-icon">
-                            <i class="fas fa-prescription-bottle"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Medication Adherence</h3>
-                            <p>Tracks refills, sends reminders, detects non-adherence patterns, and provides contextual education on medications.</p>
-                        </div>
-                    </div>
-                    <div class="feature hidden delay-2">
-                        <div class="feature-icon">
-                            <i class="fas fa-user-md"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Appointment Coordination</h3>
-                            <p>Sends reminders, assists with rescheduling via SMS, and follows up post-appointment to check recommendation adherence.</p>
-                        </div>
-                    </div>
-                    <div class="feature hidden delay-3">
-                        <div class="feature-icon">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Chronic Condition Management</h3>
-                            <p>Engages patients with conditions like diabetes and hypertension, using NLP to escalate issues when needed.</p>
-                        </div>
-                    </div>
-                    <div class="feature hidden delay-2">
-                        <div class="feature-icon">
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>STAR Rating Optimization</h3>
-                            <p>Targets patients who impact HEDIS & CAHPS scores, increases wellness visit compliance, and enhances member experience.</p>
-                        </div>
-                    </div>
-                    <div class="feature hidden delay-3">
-                        <div class="feature-icon">
-                            <i class="fas fa-comment-dots"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>AI-Powered Conversations</h3>
-                            <p>Uses Tevere Tech's proprietary chat technology to craft empathetic dialogues that adapt to patient needs and provide tailored recommendations.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technology Section -->
-        <section id="technology" class="fade-in">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Technical Framework</span>
-                    <h2>Powerful Technology Stack</h2>
-                    <p class="section-intro">Built by Tevere Tech on a secure, scalable architecture optimized for healthcare interactions</p>
-                </div>
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <div class="tech-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <div class="tech-content">
-                            <h3>Advanced NLP Engine</h3>
-                            <p>Powered by proprietary technology, fine-tuned with medical-specific dialogue patterns for natural, contextual conversations.</p>
-                        </div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">
-                            <i class="fas fa-hospital"></i>
-                        </div>
-                        <div class="tech-content">
-                            <h3>EHR Integration</h3>
-                            <p>FHIR-compliant API connections enable seamless integration with existing electronic health record systems.</p>
-                        </div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="tech-content">
-                            <h3>SMS Communication</h3>
-                            <p>Twilio-powered messaging system ensures reliable patient interactions via their preferred communication channel.</p>
-                        </div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="tech-content">
-                            <h3>HIPAA Compliance</h3>
-                            <p>End-to-end encryption and secure infrastructure designed to exceed healthcare data protection standards.</p>
-                        </div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="tech-content">
-                            <h3>Voice Call Capability</h3>
-                            <p>Interactive voice response system that provides the same personalized care experience through telephone calls for patients who prefer voice communication.</p>
-                        </div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon">
-                            <i class="fas fa-history"></i>
-                        </div>
-                        <div class="tech-content">
-                            <h3>Contextual Awareness</h3>
-                            <p>Persistent memory of past interactions and medical history allows for more meaningful follow-ups and truly personalized care guidance.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="conversation-demo">
-                    <h3>Experience AI-Powered Patient Conversations</h3>
-                    <div class="chat-container">
-                        <div class="chat-message system">
-                            <div class="message-content">
-                                <span class="message-text">Hello James, this is Anna from HealthFirst Medicare. I noticed you haven't refilled your blood pressure medication this month. Would you like me to help with that?</span>
-                            </div>
-                        </div>
-                        <div class="chat-message user">
-                            <div class="message-content">
-                                <span class="message-text">I've been feeling fine lately. Do I really need to keep taking it?</span>
-                            </div>
-                        </div>
-                        <div class="chat-message system">
-                            <div class="message-content">
-                                <span class="message-text">That's actually a common question. Even when you feel fine, your blood pressure medication is working to prevent complications. Your doctor recommended consistent use based on your health history. Would you like me to schedule your refill for pickup at Central Pharmacy or delivery to your home?</span>
-                            </div>
-                        </div>
-                        <div class="chat-message user">
-                            <div class="message-content">
-                                <span class="message-text">Delivery would be better. I also have some questions about side effects.</span>
-                            </div>
-                        </div>
-                        <div class="chat-message system">
-                            <div class="message-content">
-                                <span class="message-text">I'll arrange home delivery for tomorrow. Regarding side effects, your medication may cause mild dizziness when standing up quickly. Would you like me to connect you with a pharmacist for a more detailed discussion, or schedule a check-in with your primary care provider?</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Process Section -->
-        <section id="process" class="fade-in">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">How It Works</span>
-                    <h2>Anna in Action</h2>
-                    <p class="section-intro">A seamless three-step process for better healthcare outcomes</p>
-                </div>
-                <div class="process-steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>EHR Integration</h3>
-                            <p>Anna connects to your existing health records system using FHIR standards.</p>
-                            <ul class="step-details">
-                                <li>Securely accesses patient data and care gaps</li>
-                                <li>Identifies priority engagement opportunities</li>
-                                <li>Requires minimal IT resources to implement</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="connector"></div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>Patient Outreach</h3>
-                            <p>Engages patients through personalized SMS conversations.</p>
-                            <ul class="step-details">
-                                <li>Contextual awareness of each patient's specific needs</li>
-                                <li>Natural language processing to understand responses</li>
-                                <li>Adaptive messaging based on patient behaviors</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="connector"></div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>Performance Analytics</h3>
-                            <p>Tracks engagement metrics and impact on CMS compliance.</p>
-                            <ul class="step-details">
-                                <li>Real-time dashboards showing STAR rating impact</li>
-                                <li>Patient engagement analytics by segment</li>
-                                <li>ROI forecasting based on Medicare reimbursement models</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pilot Program Section -->
-        <section id="pilot" class="fade-in">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Limited Opportunity</span>
-                    <h2>Join Our Pilot Program</h2>
-                    <p class="section-intro">Be among the first Medicare Advantage plans to harness Anna's capabilities with special early adopter benefits</p>
-                </div>
-                <div class="pilot-stack">
-                    <div class="pilot-benefits">
-                        <h3>Exclusive Pilot Partner Benefits</h3>
-                        <ul class="benefits-list">
-                            <li>
-                                <i class="fas fa-check-circle"></i>
-                                <div>
-                                    <h4>Reduced Pricing</h4>
-                                    <p>Special subscription rates locked in for 24 months</p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-check-circle"></i>
-                                <div>
-                                    <h4>Concierge Implementation</h4>
-                                    <p>White-glove EHR integration and setup support</p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-check-circle"></i>
-                                <div>
-                                    <h4>Custom Feature Development</h4>
-                                    <p>Influence our roadmap with your specific needs</p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-check-circle"></i>
-                                <div>
-                                    <h4>Limited Participants</h4>
-                                    <p>Only accepting 3-5 regional MA plans for initial launch</p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-check-circle"></i>
-                                <div>
-                                    <h4>Flexible Deployment</h4>
-                                    <p>Start with a focused patient segment before full rollout</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="pilot-timeline">
-                        <h3>Pilot Program Timeline</h3>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Initial Consultation</h4>
-                                    <p>Review of your MA plan data, STAR rating gaps, and engagement needs</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Onboarding & Integration</h4>
-                                    <p>2-4 week setup with your EHR system and patient data</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Limited Deployment</h4>
-                                    <p>Initial rollout to selected patient groups (e.g., diabetes management)</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Analysis & Optimization</h4>
-                                    <p>Monthly review of performance metrics and engagement results</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Full Implementation</h4>
-                                    <p>Expanding to full eligible membership with custom optimizations</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Advantages Section -->
-        <section id="advantages" class="fade-in">
-            <div class="container">
-                <div class="section-header scale-in">
-                    <span class="section-tag">Why Choose Anna</span>
-                    <h2>The Anna Advantage</h2>
-                    <p class="section-intro">Key benefits for regional Medicare Advantage plans</p>
-                </div>
-                <div class="advantages-grid">
-                    <div class="advantage hidden">
-                        <div class="advantage-icon">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <h3>Improved Health Outcomes</h3>
-                        <p>Drives higher patient engagement for preventive and chronic care management.</p>
-                        <div class="advantage-metric">
-                            <span>Targeted</span> preventive care completion
-                        </div>
-                    </div>
-                    <div class="advantage hidden delay-1">
-                        <div class="advantage-icon">
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h3>Enhanced STAR Ratings</h3>
-                        <p>Focuses on key CMS metrics that impact your quality score and bonuses.</p>
-                        <div class="advantage-metric">
-                            <span>Strategic</span> HEDIS measure targeting
-                        </div>
-                    </div>
-                    <div class="advantage hidden delay-2">
-                        <div class="advantage-icon">
-                            <i class="fas fa-dollar-sign"></i>
-                        </div>
-                        <h3>Revenue Growth</h3>
-                        <p>Subscription model pricing with potential for significant ROI through improved CMS payments.</p>
-                        <div class="advantage-metric">
-                            <span>Monthly</span> subscription with clear ROI
-                        </div>
-                    </div>
-                    <div class="advantage hidden delay-3">
-                        <div class="advantage-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h3>Operational Efficiency</h3>
-                        <p>Reduces staff workload for routine patient outreach and follow-up tasks.</p>
-                        <div class="advantage-metric">
-                            <span>Automated</span> patient engagement
-                        </div>
-                    </div>
-                    <div class="advantage hidden delay-2">
-                        <div class="advantage-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h3>Increased Member Engagement & Retention</h3>
-                        <p>Personalized, proactive SMS reminders improve patient adherence, satisfaction, and long-term plan loyalty, reducing churn.</p>
-                        <div class="advantage-metric">
-                            <span>Higher</span> member retention rates
-                        </div>
-                    </div>
-                    <div class="advantage hidden delay-3">
-                        <div class="advantage-icon">
-                            <i class="fas fa-balance-scale"></i>
-                        </div>
-                        <h3>Regulatory & Compliance Support</h3>
-                        <p>HIPAA-compliant AI ensures engagement aligns with CMS guidelines, supporting plans in meeting regulatory requirements with minimal risk.</p>
-                        <div class="advantage-metric">
-                            <span>Robust</span> compliance framework
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section with Demo Request Form -->
-        <section id="demo" class="section-alt">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Get Started Today</span>
-                    <h2>Schedule a Personalized Demo</h2>
-                    <p class="section-intro">See how Anna can transform your patient engagement and Medicare Advantage outcomes</p>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Anna</span>
+                    <span class="logo-dot">.</span>
+                    <span class="logo-tagline">by Tevere Tech</span>
+                </a>
+                
+                <div class="nav-menu">
+                    <a href="#demo" class="nav-link">Product Demo</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#use-cases" class="nav-link">Use Cases</a>
+                    <a href="#pilot" class="nav-link">Pilot Program</a>
+                    <a href="contact.html" class="nav-link nav-cta">Get Early Access</a>
                 </div>
                 
-                <div class="contact-grid">
-                    <div class="contact-form-wrapper">
-                        <form id="contact-form" class="contact-form" novalidate>
-                            <div class="form-header">
-                                <h3>Request Your Demo</h3>
-                                <p>Our team will reach out within 24 hours to schedule your personalized demo</p>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="name">Full Name <span class="required">*</span></label>
-                                <input type="text" id="name" name="name" placeholder="John Smith" required>
-                                <div class="error-message" id="name-error"></div>
-                            </div>
-                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="email">Work Email <span class="required">*</span></label>
-                                    <input type="email" id="email" name="email" placeholder="jsmith@healthplan.com" required>
-                                    <div class="error-message" id="email-error"></div>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
-                                    <div class="error-message" id="phone-error"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="company">Organization <span class="required">*</span></label>
-                                <input type="text" id="company" name="company" placeholder="Health Plan Name" required>
-                                <div class="error-message" id="company-error"></div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="jobTitle">Job Title <span class="required">*</span></label>
-                                <input type="text" id="jobTitle" name="jobTitle" placeholder="Director of Member Services" required>
-                                <div class="error-message" id="jobTitle-error"></div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">How can Anna help your organization?</label>
-                                <textarea id="message" name="message" placeholder="Tell us about your specific needs and challenges" rows="4"></textarea>
-                                <div class="error-message" id="message-error"></div>
-                            </div>
-                            
-                            <div class="form-checkbox">
-                                <input type="checkbox" id="consent" name="consent" required>
-                                <label for="consent">I agree to receive communications about Anna and related services. You can unsubscribe at any time. <span class="required">*</span></label>
-                                <div class="error-message" id="consent-error"></div>
-                            </div>
-                            
-                            <button type="submit" class="cta-button btn-full">Schedule My Demo</button>
-                            
-                            <div class="form-note">
-                                <i class="fas fa-lock" aria-hidden="true"></i>
-                                <span>Your information is secure and will never be shared with third parties.</span>
-                            </div>
-                        </form>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-rocket"></i>
+                        <span>Now Accepting Pilot Partners</span>
+                    </div>
+                    <h1>Revolutionize Medicare Advantage Member Engagement with AI</h1>
+                    <p class="hero-description">
+                        Anna is an intelligent healthcare assistant that engages your Medicare Advantage members through personalized SMS and voice conversations, helping close care gaps, improve medication adherence, and enhance STAR ratings.
+                    </p>
+                    <div class="hero-value-props">
+                        <div class="value-prop">
+                            <i class="fas fa-comments"></i>
+                            <span>24/7 Member Support</span>
+                        </div>
+                        <div class="value-prop">
+                            <i class="fas fa-chart-line"></i>
+                            <span>STAR Rating Focused</span>
+                        </div>
+                        <div class="value-prop">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>HIPAA Compliant</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#demo" class="btn btn-primary">See Live Demo</a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <i class="fas fa-calendar"></i>
+                            Join Pilot Program
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-mockup">
+                        <i class="fas fa-comments"></i>
+                        <h3>Intelligent Healthcare Conversations</h3>
+                        <p style="color: var(--text-color);">See how Anna engages with members to improve outcomes</p>
+                        <a href="#demo" class="btn btn-white">View Live Demos</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <!-- Live Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">See Anna in Action</span>
+                <h2>Real Conversations, Real Impact</h2>
+                <p>Experience how Anna engages with Medicare Advantage members to improve health outcomes</p>
+            </div>
+            
+            <div class="demo-container">
+                <div class="demo-tabs">
+                    <button class="demo-tab active" data-demo="medication">Medication Adherence</button>
+                    <button class="demo-tab" data-demo="screening">Preventive Screening</button>
+                    <button class="demo-tab" data-demo="appointment">Appointment Scheduling</button>
+                    <button class="demo-tab" data-demo="chronic">Chronic Care Check-in</button>
+                </div>
+                
+                <div class="demo-content">
+                    <div class="demo-scenario active" id="medication-demo">
+                        <div class="scenario-header">
+                            <h3>Medication Refill Reminder</h3>
+                            <p>Anna identifies members due for refills and proactively reaches out</p>
+                        </div>
+                        <div class="chat-demo">
+                            <div class="chat-message bot">
+                                <div class="avatar">A</div>
+                                <div class="message">Hi Robert! This is Anna from your Medicare plan. I noticed your blood pressure medication (Lisinopril) is due for a refill. Would you like me to help arrange that with your pharmacy?</div>
+                                <span class="time">2:15 PM</span>
+                            </div>
+                            <div class="chat-message user">
+                                <div class="message">I've been feeling fine lately. Do I still need to take it?</div>
+                                <span class="time">2:18 PM</span>
+                            </div>
+                            <div class="chat-message bot">
+                                <div class="avatar">A</div>
+                                <div class="message">It's great that you're feeling well! That often means your medication is working effectively. Blood pressure medications work preventively - stopping them can lead to complications even if you feel fine. Would you like to discuss this with your doctor first, or shall I go ahead with the refill?</div>
+                                <span class="time">2:18 PM</span>
+                            </div>
+                            <div class="chat-message user">
+                                <div class="message">Ok that makes sense. Please refill it.</div>
+                                <span class="time">2:20 PM</span>
+                            </div>
+                            <div class="chat-message bot">
+                                <div class="avatar">A</div>
+                                <div class="message">Perfect! I've sent the refill request to CVS on Main Street. It will be ready for pickup tomorrow after 10 AM. I'll text you a reminder. Is there anything else I can help you with today?</div>
+                                <span class="time">2:20 PM</span>
+                            </div>
+                        </div>
+                        <div class="demo-impact">
+                            <h4>Impact on Your Plan:</h4>
+                            <ul>
+                                <li>Improves medication adherence rates (key STAR measure)</li>
+                                <li>Prevents complications from discontinued medications</li>
+                                <li>Reduces inbound calls to your care management team</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-scenario" id="screening-demo">
+                        <div class="scenario-header">
+                            <h3>Preventive Care Outreach</h3>
+                            <p>Anna helps close care gaps by scheduling overdue screenings</p>
+                        </div>
+                        <div class="chat-demo">
+                            <div class="chat-message bot">
+                                <div class="avatar">A</div>
+                                <div class="message">Hello Maria! This is Anna from your Medicare plan. Our records show you're due for your annual mammogram. This is an important preventive screening covered 100% by your plan. Would you like me to help you schedule it?</div>
+                                <span class="time">10:30 AM</span>
+                            </div>
+                            <div class="chat-message user">
+                                <div class="message">Yes, I keep forgetting to schedule that</div>
+                                <span class="time">10:45 AM</span>
+                            </div>
+                            <div class="chat-message bot">
+                                <div class="avatar">A</div>
+                                <div class="message">No problem, I'm here to help! I can see that Regional Medical Center and Women's Health Clinic both have availability this week. Which location would you prefer?</div>
+                                <span class="time">10:45 AM</span>
+                            </div>
+                            <div class="chat-message user">
+                                <div class="message">Women's Health Clinic is closer to me</div>
+                                <span class="time">10:47 AM</span>
+                            </div>
+                            <div class="chat-message bot">
+                                <div class="avatar">A</div>
+                                <div class="message">Great choice! They have openings on Thursday at 9 AM or Friday at 2 PM. Which works better for your schedule?</div>
+                                <span class="time">10:47 AM</span>
+                            </div>
+                        </div>
+                        <div class="demo-impact">
+                            <h4>Impact on Your Plan:</h4>
+                            <ul>
+                                <li>Closes care gaps that directly impact STAR ratings</li>
+                                <li>Increases preventive screening completion rates</li>
+                                <li>Identifies cancers and conditions early when treatment is most effective</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-scenario" id="appointment-demo">
+                        <div class="scenario-header">
+                            <h3>Annual Wellness Visit Scheduling</h3>
+                            <p>Anna ensures members complete their important annual check-ups</p>
+                        </div>
+                        <div class="chat-demo">
+                            <div class="chat-message bot">
+                                <div class="avatar">A</div>
+                                <div class="message">Hi James! This is Anna from your Medicare plan. It's time for your Annual Wellness Visit - a comprehensive check-up that's completely free with your plan. This visit helps your doctor create a personalized prevention plan. Can I help schedule this for you?</div>
+                                <span class="time">3:00 PM</span>
+                            </div>
+                            <div class="chat-message user">
+                                <div class="message">What does that include?</div>
+                                <span class="time">3:15 PM</span>
+                            </div>
+                            <div class="chat-message bot">
+                                <div class="avatar">A</div>
+                                <div class="message">Great question! Your Annual Wellness Visit includes: review of your medical history, checking vital signs like blood pressure, discussing preventive services you may need, updating your medication list, and creating a plan to keep you healthy. It typically takes about 30-45 minutes. Would you like to schedule it with Dr. Thompson?</div>
+                                <span class="time">3:15 PM</span>
+                            </div>
+                        </div>
+                        <div class="demo-impact">
+                            <h4>Impact on Your Plan:</h4>
+                            <ul>
+                                <li>Increases Annual Wellness Visit completion (STAR measure)</li>
+                                <li>Helps identify new conditions for proper risk adjustment</li>
+                                <li>Strengthens member-provider relationships</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-scenario" id="chronic-demo">
+                        <div class="scenario-header">
+                            <h3>Chronic Condition Management</h3>
+                            <p>Anna provides ongoing support for members with chronic conditions</p>
+                        </div>
+                        <div class="chat-demo">
+                            <div class="chat-message bot">
+                                <div class="avatar">A</div>
+                                <div class="message">Good morning Susan! This is Anna checking in on your diabetes management. How have your blood sugar levels been this week?</div>
+                                <span class="time">9:00 AM</span>
+                            </div>
+                            <div class="chat-message user">
+                                <div class="message">They've been running a bit high, around 180-200</div>
+                                <span class="time">9:10 AM</span>
+                            </div>
+                            <div class="chat-message bot">
+                                <div class="avatar">A</div>
+                                <div class="message">Thank you for sharing that. Those levels are higher than your target range. Have you been taking your Metformin as prescribed? Any changes to your diet or activity level recently?</div>
+                                <span class="time">9:10 AM</span>
+                            </div>
+                            <div class="chat-message user">
+                                <div class="message">I've been stressed and eating more. Also forgot my medicine a few times</div>
+                                <span class="time">9:12 AM</span>
+                            </div>
+                            <div class="chat-message bot">
+                                <div class="avatar">A</div>
+                                <div class="message">I understand - stress can definitely affect blood sugar. Would you like me to: 1) Set up daily medication reminders on your phone? 2) Schedule a visit with your diabetes educator for stress management tips? 3) Connect you with our nutritionist for meal planning support? Any or all of these could help!</div>
+                                <span class="time">9:12 AM</span>
+                            </div>
+                        </div>
+                        <div class="demo-impact">
+                            <h4>Impact on Your Plan:</h4>
+                            <ul>
+                                <li>Reduces hospital admissions and ER visits</li>
+                                <li>Improves diabetes care metrics (HbA1c control)</li>
+                                <li>Provides early intervention before conditions worsen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Comprehensive Platform</span>
+                <h2>Built Specifically for Medicare Advantage Success</h2>
+                <p>Every feature is designed to improve STAR ratings and member outcomes</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Conversations</h3>
+                    <p>Natural language processing understands member responses and provides contextually appropriate follow-ups</p>
+                    <ul class="feature-list">
+                        <li>Handles complex medical discussions</li>
+                        <li>Recognizes urgency and escalates appropriately</li>
+                        <li>Learns from each interaction</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>EHR Integration</h3>
+                    <p>Seamlessly connects with your existing systems to access member data and update records</p>
+                    <ul class="feature-list">
+                        <li>FHIR-compliant integration</li>
+                        <li>Real-time data synchronization</li>
+                        <li>Works with Epic, Cerner, and others</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Omnichannel Outreach</h3>
+                    <p>Reaches members through their preferred communication channel</p>
+                    <ul class="feature-list">
+                        <li>SMS text messaging</li>
+                        <li>Voice calls with natural speech</li>
+                        <li>Integration with member portals</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Track engagement metrics and measure impact on quality measures</p>
+                    <ul class="feature-list">
+                        <li>Real-time engagement tracking</li>
+                        <li>HEDIS measure progress</li>
+                        <li>ROI measurement tools</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Security & Compliance</h3>
+                    <p>Built with healthcare security requirements from day one</p>
+                    <ul class="feature-list">
+                        <li>HIPAA compliant infrastructure</li>
+                        <li>End-to-end encryption</li>
+                        <li>Secure data handling</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Care Team Integration</h3>
+                    <p>Enhances your existing care management workflows</p>
+                    <ul class="feature-list">
+                        <li>Automated escalation protocols</li>
+                        <li>Care team dashboards</li>
+                        <li>Seamless handoffs when needed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Implementation Process</span>
+                <h2>Get Started in Weeks, Not Months</h2>
+                <p>Our streamlined implementation process gets you up and running quickly</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Discovery & Planning</h3>
+                        <span class="step-duration">Week 1-2</span>
+                        <p>We analyze your member population, identify key use cases, and create a customized implementation plan</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>EHR Integration</h3>
+                        <span class="step-duration">Week 2-3</span>
+                        <p>Connect Anna to your existing systems using FHIR standards for secure data exchange</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Configuration & Testing</h3>
+                        <span class="step-duration">Week 3-4</span>
+                        <p>Customize messaging, set up workflows, and test with a small member cohort</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Pilot Launch</h3>
+                        <span class="step-duration">Week 5-6</span>
+                        <p>Begin with targeted member populations and monitor engagement metrics</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Scale & Optimize</h3>
+                        <span class="step-duration">Ongoing</span>
+                        <p>Expand to full member base while continuously optimizing based on results</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" class="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Proven Use Cases</span>
+                <h2>Address Your Most Critical Challenges</h2>
+                <p>Anna tackles the issues that matter most to Medicare Advantage plans</p>
+            </div>
+            
+            <div class="use-cases-grid">
+                <div class="use-case">
+                    <div class="use-case-header">
+                        <i class="fas fa-star"></i>
+                        <h3>STAR Rating Improvement</h3>
+                    </div>
+                    <p>Target specific HEDIS and CAHPS measures with automated outreach campaigns</p>
+                    <ul>
+                        <li>Medication adherence (diabetes, hypertension, cholesterol)</li>
+                        <li>Breast cancer screening</li>
+                        <li>Colorectal cancer screening</li>
+                        <li>Annual flu vaccine</li>
+                        <li>Care for older adults</li>
+                    </ul>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-header">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>Cost Reduction</h3>
+                    </div>
+                    <p>Prevent expensive acute events through proactive engagement</p>
+                    <ul>
+                        <li>Reduce ER visits through symptom triage</li>
+                        <li>Prevent readmissions with post-discharge follow-up</li>
+                        <li>Avoid complications through medication adherence</li>
+                        <li>Decrease call center volume</li>
+                        <li>Automate routine member outreach</li>
+                    </ul>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-header">
+                        <i class="fas fa-clipboard-check"></i>
+                        <h3>Risk Adjustment</h3>
+                    </div>
+                    <p>Identify and document conditions through intelligent conversations</p>
+                    <ul>
+                        <li>Surface unreported diagnoses</li>
+                        <li>Prompt annual HCC validations</li>
+                        <li>Schedule provider visits for suspected conditions</li>
+                        <li>Document social determinants of health</li>
+                        <li>Track condition progression</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilot Program Section -->
+    <section id="pilot" class="pilot-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Limited Opportunity</span>
+                <h2>Join Our Exclusive Pilot Program</h2>
+                <p>Be among the first Medicare Advantage plans to leverage Anna's capabilities</p>
+            </div>
+            
+            <div class="pilot-content">
+                <div class="pilot-benefits">
+                    <h3>Pilot Partner Benefits</h3>
+                    <div class="benefit-grid">
+                        <div class="pilot-benefit">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <h4>Special Pricing</h4>
+                            <p>Significantly reduced rates for early adopters, locked in for 24 months</p>
+                        </div>
+                        <div class="pilot-benefit">
+                            <i class="fas fa-concierge-bell"></i>
+                            <h4>White Glove Service</h4>
+                            <p>Dedicated implementation team and ongoing optimization support</p>
+                        </div>
+                        <div class="pilot-benefit">
+                            <i class="fas fa-code-branch"></i>
+                            <h4>Shape the Product</h4>
+                            <p>Direct input on features and roadmap based on your needs</p>
+                        </div>
+                        <div class="pilot-benefit">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Prove ROI First</h4>
+                            <p>Start with high-impact use cases to demonstrate value quickly</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pilot-requirements">
+                    <h3>Ideal Pilot Partners</h3>
+                    <ul>
+                        <li>Regional Medicare Advantage plans with 2,000-10,000 members</li>
+                        <li>Committed to improving STAR ratings and member experience</li>
+                        <li>Have basic EHR integration capabilities (Epic, Cerner, etc.)</li>
+                        <li>Willing to start with a focused member segment (e.g., diabetics)</li>
+                        <li>Can provide feedback and collaborate on optimization</li>
+                    </ul>
+                    <div class="pilot-cta">
+                        <p><strong>Apply </strong> for Q4 2025</p>
+                        <a href="contact.html" class="btn btn-primary">Apply for Pilot Program</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Member Engagement?</h2>
+                <p>Schedule a personalized demo to see how Anna can help your Medicare Advantage plan thrive</p>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn btn-white">Schedule Demo</a>
+                    <a href="#demo" class="btn btn-outline">Watch Product Tour</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer id="footer">
-        <div class="footer-wave">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
-                <path fill="#f8f9fa" fill-opacity="1" d="M0,64L80,58.7C160,53,320,43,480,48C640,53,800,75,960,80C1120,85,1280,75,1360,69.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-            </svg>
-        </div>
+    <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-branding">
-                    <div class="footer-logo">
-                        <a href="#" aria-label="Anna Home">
-                            <span class="logo-text">Anna</span>
-                            <span class="logo-tagline">by Tevere Tech</span>
-                        </a>
-                    </div>
-                    <p class="footer-description">
-                        A HIPAA-compliant digital health assistant working over both SMS and call to optimize healthcare outcomes for Medicare Advantage plans.
-                    </p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Visit our LinkedIn page">
-                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" aria-label="Visit our Twitter page">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" aria-label="Visit our Facebook page">
-                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" aria-label="Visit our Instagram page">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </div>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">Anna</span>
+                        <span class="logo-dot">.</span>
+                    </a>
+                    <p>AI-powered healthcare engagement for Medicare Advantage plans.</p>
+                    <p class="footer-stage">Currently in pilot phase - accepting select partners</p>
                 </div>
                 
-                <div class="footer-navigation">
-                    <h3>Explore</h3>
-                    <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#benefits">Benefits</a></li>
-                        <li><a href="#demo">Request Demo</a></li>
-                        <li><a href="#">ROI Calculator</a></li>
-                        <li><a href="#">About Us</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#demo">Live Demo</a>
+                    <a href="#use-cases">Use Cases</a>
+                    <a href="#pilot">Pilot Program</a>
                 </div>
                 
-                <div class="footer-resources">
-                    <h3>Resources</h3>
-                    <ul>
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">Medicare Blog</a></li>
-                        <li><a href="#">Engagement Guide</a></li>
-                        <li><a href="#">STAR Rating FAQ</a></li>
-                        <li><a href="#">Implementation Process</a></li>
-                        <li><a href="#">HIPAA Compliance</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#">About Tevere Tech</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
                 </div>
                 
                 <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <ul class="footer-contact-list">
-                        <li>
-                            <i class="fas fa-envelope" aria-hidden="true"></i>
-                            <a href="mailto:info@anna-health.com">info@anna-health.com</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
-                            <a href="tel:+18005550123">(800) 555-0123</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                            <span>123 Innovation Drive<br>Boston, MA 02110</span>
-                        </li>
-                    </ul>
+                    <h4>Get in Touch</h4>
+                    <p>Join innovative MA plans transforming member engagement</p>
+                    <a href="contact.html" class="btn btn-primary">Request Early Access</a>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <div class="footer-copyright">
-                    &copy; 2025 Tevere Tech. All rights reserved.
-                </div>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Policy</a>
-                </div>
+                <p>&copy; 2025 Tevere Tech. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu').addEventListener('click', function() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-            this.classList.toggle('active');
-            
-            // Update aria-expanded attribute for accessibility
-            const expanded = this.classList.contains('active');
-            this.setAttribute('aria-expanded', expanded);
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // Sticky Navbar
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-        
-        // Form validation and submission
-        const form = document.getElementById('demo-request-form');
-        if (form) {
-            // Add error message containers to form fields
-            const formGroups = form.querySelectorAll('.form-group');
-            formGroups.forEach(group => {
-                const errorDiv = document.createElement('div');
-                errorDiv.className = 'error-message';
-                group.appendChild(errorDiv);
-            });
-            
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Reset previous error messages
-                const errorMessages = form.querySelectorAll('.error-message');
-                errorMessages.forEach(error => {
-                    error.textContent = '';
-                    error.style.display = 'none';
-                });
-                
-                // Validate email format
-                const email = document.getElementById('email');
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                
-                let isValid = true;
-                
-                // Check required fields and formats
-                const requiredFields = form.querySelectorAll('[required]');
-                requiredFields.forEach(field => {
-                    const errorContainer = field.parentElement.querySelector('.error-message');
-                    
-                    // Check if field is empty
-                    if (!field.value.trim()) {
-                        errorContainer.textContent = 'This field is required';
-                        errorContainer.style.display = 'block';
-                        isValid = false;
-                    }
-                    
-                    // Email format validation
-                    if (field.id === 'email' && field.value.trim() && !emailRegex.test(field.value)) {
-                        errorContainer.textContent = 'Please enter a valid email address';
-                        errorContainer.style.display = 'block';
-                        isValid = false;
-                    }
-                    
-                    // Additional work email validation
-                    if (field.id === 'email' && field.value.trim() && emailRegex.test(field.value)) {
-                        const domain = field.value.split('@')[1];
-                        if (domain.includes('gmail.com') || domain.includes('yahoo.') || domain.includes('hotmail.') || domain.includes('outlook.com')) {
-                            errorContainer.textContent = 'Please use your work email address';
-                            errorContainer.style.display = 'block';
-                            isValid = false;
-                        }
-                    }
-                });
-                
-                // If form is valid, proceed with submission
-                if (isValid) {
-                    const button = form.querySelector('button[type="submit"]');
-                    const originalText = button.textContent;
-                    
-                    // Simulate submission
-                    button.textContent = 'Processing...';
-                    button.disabled = true;
-                    
-                    setTimeout(() => {
-                        // Show success message
-                        form.innerHTML = `
-                            <div class="success-message">
-                                <i class="fas fa-check-circle"></i>
-                                <h3>Application Received!</h3>
-                                <p>Thank you for your interest in our pilot program. We'll be in touch within 1-2 business days to discuss next steps.</p>
-                            </div>
-                        `;
-                    }, 1500);
-                }
-            });
-        }
-        
-        // Scroll animations
-        const fadeElements = document.querySelectorAll('.fade-in');
-        const scaleElements = document.querySelectorAll('.scale-in');
-        const hiddenElements = document.querySelectorAll('.hidden');
-        const slideLeftElements = document.querySelectorAll('.slide-left');
-        const slideRightElements = document.querySelectorAll('.slide-right');
-        
-        // Helper function for checking if element is in view
-        const isInView = (element, offset = 150) => {
-            const rect = element.getBoundingClientRect();
-            return (
-                rect.top <= (window.innerHeight - offset || document.documentElement.clientHeight - offset) &&
-                rect.bottom >= 0
-            );
-        };
-        
-        // Function to handle scroll animations
-        const handleScrollAnimations = () => {
-            // Fade in animations
-            fadeElements.forEach(el => {
-                if (isInView(el)) {
-                    el.classList.add('appear');
-                }
-            });
-            
-            // Scale in animations
-            scaleElements.forEach(el => {
-                if (isInView(el)) {
-                    el.classList.add('appear');
-                }
-            });
-            
-            // Hidden elements animation
-            hiddenElements.forEach(el => {
-                if (isInView(el)) {
-                    el.classList.add('show');
-                }
-            });
-            
-            // Slide animations
-            slideLeftElements.forEach(el => {
-                if (isInView(el)) {
-                    el.classList.add('slide-in');
-                }
-            });
-            
-            slideRightElements.forEach(el => {
-                if (isInView(el)) {
-                    el.classList.add('slide-in');
-                }
-            });
-        };
-        
-        // Run once on page load
-        window.addEventListener('DOMContentLoaded', handleScrollAnimations);
-        
-        // Run on scroll
-        window.addEventListener('scroll', handleScrollAnimations);
-        
-        // Mobile optimizations
-        document.addEventListener('DOMContentLoaded', function() {
-            // Fix 300ms delay on iOS touch events
-            document.body.addEventListener('touchstart', function() {}, { passive: true });
-            
-            // Close mobile menu when clicking a link
-            const navLinks = document.querySelectorAll('.nav-menu a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    document.querySelector('.nav-menu').classList.remove('active');
-                    document.getElementById('mobile-menu').classList.remove('active');
-                    document.getElementById('mobile-menu').setAttribute('aria-expanded', 'false');
-                });
-            });
-            
-            // Fix for iOS hover states
-            if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
-                // Use click instead of hover for tap interactions
-                const hoverElements = document.querySelectorAll('.feature, .tech-item, .advantage, .step');
-                hoverElements.forEach(el => {
-                    el.addEventListener('touchstart', function() {
-                        this.classList.add('touched');
-                    }, { passive: true });
-                });
-            }
-            
-            // Optimize scroll performance
-            let scrollTimeout;
-            window.addEventListener('scroll', function() {
-                if (!document.body.classList.contains('is-scrolling')) {
-                    document.body.classList.add('is-scrolling');
-                }
-                
-                clearTimeout(scrollTimeout);
-                scrollTimeout = setTimeout(function() {
-                    document.body.classList.remove('is-scrolling');
-                }, 200);
-            }, { passive: true });
-        });
-    </script>
-
-    <!-- Schema.org structured data for better SEO and rich snippets -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Anna by Tevere Tech",
-      "url": "https://anna-health.com",
-      "logo": "https://anna-health.com/logo.png",
-      "description": "Anna is an AI-powered SMS assistant for Medicare Advantage plans, designed to optimize healthcare outcomes and improve STAR ratings.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "(800) 555-0123",
-        "contactType": "customer service",
-        "email": "info@anna-health.com"
-      },
-      "sameAs": [
-        "https://twitter.com/annahealth",
-        "https://linkedin.com/company/anna-health"
-      ]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Anna AI SMS Healthcare Assistant",
-      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      "description": "A HIPAA-compliant digital health assistant working over both SMS and call designed to optimize healthcare outcomes, improve STAR ratings, and drive revenue growth for regional Medicare Advantage plans.",
-      "brand": {
-        "@type": "Brand",
-        "name": "Tevere Tech"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "price": "1000",
-        "priceValidUntil": "2026-12-31",
-        "availability": "https://schema.org/LimitedAvailability"
-      }
-    }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
