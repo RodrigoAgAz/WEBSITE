@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing - Anna Healthcare AI</title>
-    <meta name="description" content="Flexible pricing plans for Anna's AI healthcare assistant. Transform your Medicare Advantage plan with transparent, value-based pricing.">
+    <meta name="description" content="Transparent per-member pricing for Anna's AI healthcare assistant. Transform your Medicare Advantage plan with value-based pricing that delivers ROI.">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -28,12 +28,11 @@
                 </a>
                 
                 <div class="nav-menu">
-                    <a href="index.html#features" class="nav-link">Features</a>
-                    <a href="index.html#benefits" class="nav-link">Benefits</a>
-                    <a href="index.html#technology" class="nav-link">Technology</a>
-                    <a href="index.html#roi" class="nav-link">ROI</a>
-                    <a href="pricing.html" class="nav-link active">Pricing</a>
-                    <a href="contact.html" class="nav-link nav-cta">Get Started</a>
+                    <a href="solutions.html" class="nav-link">Solutions</a>
+                    <a href="features.html" class="nav-link">Features</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="getstarted.html" class="nav-link nav-cta">Get Started</a>
                 </div>
                 
                 <button class="mobile-toggle" aria-label="Toggle menu">
@@ -45,256 +44,181 @@
         </div>
     </nav>
 
-    <!-- Pricing Hero -->
-    <section class="pricing-hero">
+    <!-- Hero Section -->
+    <section class="hero-section">
         <div class="container">
-            <div class="pricing-hero-content">
-                <span class="section-label">Transparent Pricing</span>
-                <h1>Investment That Pays for Itself</h1>
-                <p>Choose the plan that fits your organization's needs. All plans include our core AI technology, HIPAA compliance, and dedicated support.</p>
+            <div class="hero-content">
+                <h1>Simple, Transparent Pricing</h1>
+                <p class="hero-subtitle">One plan, all features, predictable costs. No setup fees, no hidden charges.</p>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Plans -->
-    <section class="pricing-plans">
+    <!-- Main Pricing Section -->
+    <section class="pricing-section">
         <div class="container">
-            <div class="pricing-toggle">
-                <span>Monthly</span>
-                <label class="switch">
-                    <input type="checkbox" id="pricing-toggle">
-                    <span class="slider"></span>
-                </label>
-                <span>Annual <span class="discount-badge">Save 20%</span></span>
-            </div>
-            
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Pilot Program</h3>
-                        <p>Perfect for testing Anna with a subset of members</p>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount" data-monthly="0.50" data-annual="0.40">0.50</span>
-                            <span class="period">per member/month</span>
+            <div class="single-pricing-container">
+                <div class="pricing-card-single">
+                    <div class="pricing-header-single">
+                        <h2>Anna Complete</h2>
+                        <p class="plan-description">Everything you need to improve STAR ratings and member engagement</p>
+                    </div>
+                    
+                    <div class="pricing-price-single">
+                        <span class="currency">$</span>1.00
+                        <span class="period">per member/month</span>
+                    </div>
+                    
+                    <div class="pricing-highlight">
+                        <p><strong>Only pay for engaged members</strong> - No charges for inactive members</p>
+                    </div>
+                    
+                    <div class="features-comprehensive">
+                        <div class="feature-category">
+                            <h4><i class="fas fa-comments"></i> Core Engagement Features</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Unlimited SMS conversations</li>
+                                <li><i class="fas fa-check"></i> AI-powered member interactions</li>
+                                <li><i class="fas fa-check"></i> Multi-language support (English & Spanish)</li>
+                                <li><i class="fas fa-check"></i> Personalized messaging based on member data</li>
+                                <li><i class="fas fa-check"></i> Smart conversation flows</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-category">
+                            <h4><i class="fas fa-pills"></i> Medication Management</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Automated refill reminders</li>
+                                <li><i class="fas fa-check"></i> Medication adherence tracking</li>
+                                <li><i class="fas fa-check"></i> Non-adherence alerts to care teams</li>
+                                <li><i class="fas fa-check"></i> Barrier identification and resolution</li>
+                                <li><i class="fas fa-check"></i> Pharmacy coordination assistance</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-category">
+                            <h4><i class="fas fa-calendar-check"></i> Preventive Care</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Annual wellness visit scheduling</li>
+                                <li><i class="fas fa-check"></i> Cancer screening reminders</li>
+                                <li><i class="fas fa-check"></i> Vaccination scheduling support</li>
+                                <li><i class="fas fa-check"></i> Care gap closure automation</li>
+                                <li><i class="fas fa-check"></i> Provider appointment coordination</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-category">
+                            <h4><i class="fas fa-hospital-user"></i> Care Transitions</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Post-discharge follow-up (24-72 hours)</li>
+                                <li><i class="fas fa-check"></i> Readmission risk assessment</li>
+                                <li><i class="fas fa-check"></i> Medication reconciliation support</li>
+                                <li><i class="fas fa-check"></i> Provider follow-up scheduling</li>
+                                <li><i class="fas fa-check"></i> Emergency warning signs education</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-category">
+                            <h4><i class="fas fa-chart-bar"></i> Analytics & Reporting</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Real-time engagement dashboard</li>
+                                <li><i class="fas fa-check"></i> STAR rating impact tracking</li>
+                                <li><i class="fas fa-check"></i> ROI measurement and reporting</li>
+                                <li><i class="fas fa-check"></i> Member engagement analytics</li>
+                                <li><i class="fas fa-check"></i> Custom reporting capabilities</li>
+                                <li><i class="fas fa-check"></i> Data export functionality</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-category">
+                            <h4><i class="fas fa-cogs"></i> Integration & Support</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> EMR/EHR integrations</li>
+                                <li><i class="fas fa-check"></i> Claims data integration</li>
+                                <li><i class="fas fa-check"></i> Pharmacy data feeds</li>
+                                <li><i class="fas fa-check"></i> API access for custom integrations</li>
+                                <li><i class="fas fa-check"></i> Dedicated customer success manager</li>
+                                <li><i class="fas fa-check"></i> 24/7 technical support</li>
+                                <li><i class="fas fa-check"></i> Implementation support</li>
+                                <li><i class="fas fa-check"></i> Staff training included</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="pricing-features">
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>Up to 5,000 members</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>Core engagement features</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>Basic analytics dashboard</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>Email support</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>3-month minimum commitment</span>
-                        </div>
+                    
+                    <div class="pricing-cta-single">
+                        <a href="getstarted.html" class="btn btn-primary btn-large">Get Started Today</a>
+                        <p class="cta-note">No setup fees • No contracts • Cancel anytime</p>
                     </div>
-                    <a href="contact.html" class="btn btn-outline">Start Pilot</a>
-                </div>
-                
-                <div class="pricing-card featured">
-                    <div class="featured-badge">Most Popular</div>
-                    <div class="pricing-header">
-                        <h3>Growth Plan</h3>
-                        <p>For plans ready to scale member engagement</p>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount" data-monthly="1.00" data-annual="0.80">1.00</span>
-                            <span class="period">per member/month</span>
-                        </div>
-                    </div>
-                    <div class="pricing-features">
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>5,000 - 50,000 members</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>All engagement features</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>Advanced analytics & reporting</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>Dedicated success manager</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>Custom integrations</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>Risk adjustment optimization</span>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="btn btn-primary">Get Started</a>
-                </div>
-                
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Enterprise</h3>
-                        <p>For large MA plans with complex needs</p>
-                        <div class="price">
-                            <span class="custom-pricing">Custom Pricing</span>
-                        </div>
-                    </div>
-                    <div class="pricing-features">
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>50,000+ members</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>Everything in Growth Plan</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>White-label options</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>Multi-plan support</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>24/7 phone support</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check"></i>
-                            <span>Custom AI model training</span>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="btn btn-outline">Contact Sales</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Value-Based Pricing -->
-    <section class="value-pricing">
+    <!-- Value Proposition -->
+    <section class="value-proposition">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">Performance-Based Options</span>
-                <h2>Align Our Success with Yours</h2>
-                <p>We're confident in Anna's ability to deliver results. Ask about our performance-based pricing models.</p>
-            </div>
-            
             <div class="value-grid">
-                <div class="value-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Shared Savings Model</h3>
-                    <p>Pay a reduced base fee plus a percentage of the savings Anna generates through reduced costs and improved outcomes.</p>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Transparent Pricing</h3>
+                    <p>Simple per-member pricing with no hidden fees. Only pay for members who receive engagement.</p>
                 </div>
-                <div class="value-card">
-                    <i class="fas fa-star"></i>
-                    <h3>STAR Rating Bonus Share</h3>
-                    <p>Share a portion of increased CMS bonus payments when Anna helps improve your STAR ratings.</p>
+                
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Fast Implementation</h3>
+                    <p>Go live in 2-4 weeks with our streamlined onboarding process and dedicated support team.</p>
                 </div>
-                <div class="value-card">
-                    <i class="fas fa-handshake"></i>
-                    <h3>Risk Adjustment Revenue Share</h3>
-                    <p>Split the additional revenue from newly identified HCC codes discovered through Anna's conversations.</p>
+                
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>HIPAA compliant, SOC 2 certified, with enterprise-grade security and data protection.</p>
+                </div>
+                
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Proven ROI</h3>
+                    <p>Average 300-500% ROI within 12 months through improved STAR ratings and reduced costs.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ROI Comparison -->
-    <section class="roi-comparison">
+    <!-- ROI Section -->
+    <section class="roi-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Return on Investment</span>
-                <h2>See How Anna Pays for Itself</h2>
-                <p>Based on actual results from our pilot programs with 10,000 member plans.</p>
+                <h2>Calculate Your Return on Investment</h2>
+                <p>See how Anna can impact your Medicare Advantage plan's bottom line</p>
             </div>
             
-            <div class="roi-table">
-                <div class="roi-row header">
-                    <div class="roi-cell">Impact Area</div>
-                    <div class="roi-cell">Annual Value</div>
-                    <div class="roi-cell">Per Member</div>
-                </div>
-                <div class="roi-row">
-                    <div class="roi-cell">
-                        <strong>STAR Rating Improvement</strong>
-                        <span>Moving from 3.5 to 4.5 stars</span>
-                    </div>
-                    <div class="roi-cell highlight">$8,000,000</div>
-                    <div class="roi-cell">$800</div>
-                </div>
-                <div class="roi-row">
-                    <div class="roi-cell">
-                        <strong>Medical Cost Reduction</strong>
-                        <span>ER visits, readmissions, complications</span>
-                    </div>
-                    <div class="roi-cell highlight">$1,800,000</div>
-                    <div class="roi-cell">$180</div>
-                </div>
-                <div class="roi-row">
-                    <div class="roi-cell">
-                        <strong>Risk Adjustment Optimization</strong>
-                        <span>Newly identified HCC codes</span>
-                    </div>
-                    <div class="roi-cell highlight">$1,500,000</div>
-                    <div class="roi-cell">$150</div>
-                </div>
-                <div class="roi-row">
-                    <div class="roi-cell">
-                        <strong>Member Retention</strong>
-                        <span>Reduced churn from better engagement</span>
-                    </div>
-                    <div class="roi-cell highlight">$1,600,000</div>
-                    <div class="roi-cell">$160</div>
-                </div>
-                <div class="roi-row">
-                    <div class="roi-cell">
-                        <strong>Administrative Savings</strong>
-                        <span>Reduced call center and manual outreach</span>
-                    </div>
-                    <div class="roi-cell highlight">$325,000</div>
-                    <div class="roi-cell">$32.50</div>
-                </div>
-                <div class="roi-row total">
-                    <div class="roi-cell">
-                        <strong>Total Annual Impact</strong>
-                    </div>
-                    <div class="roi-cell highlight">$13,225,000</div>
-                    <div class="roi-cell">$1,322</div>
-                </div>
-                <div class="roi-row cost">
-                    <div class="roi-cell">
-                        <strong>Anna Annual Cost</strong>
-                        <span>At $1 PMPM</span>
-                    </div>
-                    <div class="roi-cell">($120,000)</div>
-                    <div class="roi-cell">($12)</div>
-                </div>
-                <div class="roi-row net">
-                    <div class="roi-cell">
-                        <strong>Net Annual Benefit</strong>
-                    </div>
-                    <div class="roi-cell highlight">$13,105,000</div>
-                    <div class="roi-cell">$1,310</div>
+            <div class="roi-calculator-full">
+                <h3>ROI Calculator</h3>
+                <p>Every Medicare Advantage plan is unique. Use our calculator above to see potential impact based on your specific member count and current STAR rating.</p>
+                
+                <div class="roi-factors">
+                    <h4>Key Revenue Drivers:</h4>
+                    <ul>
+                        <li><strong>STAR Rating Bonuses:</strong> Plans with 4+ stars receive 5% quality bonus payments</li>
+                        <li><strong>Medical Cost Reduction:</strong> Preventing complications through medication adherence</li>
+                        <li><strong>Risk Adjustment:</strong> Better documentation through member engagement</li>
+                        <li><strong>Member Retention:</strong> Satisfied members stay with your plan</li>
+                    </ul>
                 </div>
             </div>
             
-            <div class="roi-summary">
-                <h3>Return on Investment: <span class="roi-highlight">10,920%</span></h3>
-                <p>Every dollar spent on Anna returns over $100 in value</p>
+            <div class="roi-cta">
+                <p>Want a detailed ROI analysis for your specific plan?</p>
+                <a href="getstarted.html" class="btn btn-primary">Get Custom Analysis</a>
             </div>
         </div>
     </section>
@@ -303,34 +227,38 @@
     <section class="faq-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Common Questions</span>
                 <h2>Frequently Asked Questions</h2>
             </div>
             
             <div class="faq-grid">
                 <div class="faq-item">
                     <h3>How does billing work?</h3>
-                    <p>We bill monthly based on your active member count. You only pay for members who receive at least one engagement from Anna each month.</p>
+                    <p>We bill monthly based on your active member count.</p>
                 </div>
+                
+                <div class="faq-item">
+                    <h3>Are there any setup fees?</h3>
+                    <p>No setup fees, implementation costs, or hidden charges. Our team handles the entire implementation at no additional cost.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Can we start with a pilot?</h3>
+                    <p>Absolutely! Most plans start with a 90-day pilot focused on a specific member population to prove ROI before expanding.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What's included in support?</h3>
+                    <p>All plans include implementation support, training, and ongoing customer success. Standard and Premium plans add dedicated success managers.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How quickly can we go live?</h3>
+                    <p>Most plans are engaging members within 2-4 weeks. Our streamlined implementation process minimizes IT burden.</p>
+                </div>
+                
                 <div class="faq-item">
                     <h3>Can we customize the messaging?</h3>
-                    <p>Absolutely. Anna's conversations are fully customizable to match your brand voice and specific clinical protocols.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What about members without smartphones?</h3>
-                    <p>Anna works with basic SMS text messaging and voice calls, reaching 98% of Medicare beneficiaries.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>How long does implementation take?</h3>
-                    <p>Most plans go live within 4-6 weeks, including EHR integration, testing, and staff training.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Is there a contract minimum?</h3>
-                    <p>Pilot programs require a 3-month commitment. Full deployments are typically annual contracts with monthly billing.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Can we start with a specific population?</h3>
-                    <p>Yes! Many plans start with high-risk diabetics or members with multiple chronic conditions to prove ROI quickly.</p>
+                    <p>Yes! Anna's conversations are fully customizable to match your brand voice, clinical protocols, and member preferences.</p>
                 </div>
             </div>
         </div>
@@ -340,11 +268,10 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to See the Numbers for Your Plan?</h2>
-                <p>Get a personalized ROI analysis and see exactly how Anna can impact your bottom line.</p>
+                <h2>Ready to Transform Your Member Engagement?</h2>
+                <p>Join Medicare Advantage plans achieving measurable improvements in quality and revenue</p>
                 <div class="cta-actions">
-                    <a href="contact.html" class="btn btn-white">Get Custom Analysis</a>
-                    <a href="index.html#roi" class="btn btn-outline">Use ROI Calculator</a>
+                    <a href="getstarted.html" class="btn btn-white">Schedule Demo</a>
                 </div>
             </div>
         </div>
@@ -354,43 +281,37 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <span class="logo-text">Anna</span>
-                        <span class="logo-dot">.</span>
-                    </a>
-                    <p>AI-powered healthcare engagement for Medicare Advantage plans.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
+                <div class="footer-section">
                     <h4>Product</h4>
-                    <a href="index.html#features">Features</a>
-                    <a href="index.html#technology">Technology</a>
+                    <a href="features.html">Features</a>
                     <a href="pricing.html">Pricing</a>
-                    <a href="index.html#roi">ROI Calculator</a>
                 </div>
                 
-                <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <a href="solutions.html">Use Cases</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="getstarted.html">Get Started</a>
+                </div>
+                
+                <div class="footer-section">
                     <h4>Company</h4>
-                    <a href="#">About</a>
+                    <a href="about.html">About Us</a>
                     <a href="contact.html">Contact</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
                 </div>
                 
-                <div class="footer-contact">
-                    <h4>Get in Touch</h4>
-                    <p>Ready to see Anna in action?</p>
-                    <a href="contact.html" class="btn btn-primary">Schedule Demo</a>
-                </div>
+
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Tevere Tech. All rights reserved.</p>
+                <div class="footer-logo">
+                    <span class="logo-text">Anna</span>
+                    <span class="logo-dot">.</span>
+                </div>
+                <p>&copy; 2025 Anna Health Technologies. All rights reserved.</p>
             </div>
         </div>
     </footer>
