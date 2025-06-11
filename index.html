@@ -308,6 +308,17 @@
                         <button class="scenario-btn" data-scenario="best">Best Case</button>
                     </div>
                     
+                    <!-- Comparison Mode Toggle -->
+                    <div class="comparison-mode-toggle">
+                        <label>
+                            <input type="checkbox" id="comparison-mode">
+                            Show all scenarios side-by-side
+                        </label>
+                    </div>
+
+                    <!-- Scenario Comparison Table (hidden by default) -->
+                    <div id="scenario-comparison" class="scenario-comparison-container"></div>
+                    
                     <!-- ROI Summary Cards -->
                     <div class="roi-summary-cards">
                         <div class="roi-card">
@@ -391,6 +402,11 @@
                         </div>
                     </div>
                     
+                    <!-- Overlap Adjustments Display -->
+                    <div id="overlap-adjustments" class="overlap-adjustments-container"></div>
+
+
+                    
                     <!-- CMS Bonus Eligibility Alert -->
                     <div class="bonus-alert" id="bonus-alert" style="display: none;">
                         <i class="fas fa-info-circle"></i>
@@ -408,8 +424,233 @@
                 </div>
             </div>
             
-            <div class="calculator-disclaimer">
-                <p><strong>Methodology:</strong> Calculations based on CMS average payment of $14,000 per member annually. Engagement rates vary by outreach type based on pilot data. Diminishing returns applied to high-performing plans. Care team savings based on 2,080 annual hours at $35/hour fully loaded cost. Actual results vary based on member population and current performance.</p>
+            <!-- Replace the existing calculator-disclaimer div with this comprehensive methodology -->
+            <div class="calculator-methodology">
+                <button class="methodology-toggle" onclick="toggleMethodology()">
+                    <i class="fas fa-info-circle"></i>
+                    View Detailed Methodology
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </button>
+                
+                <div class="methodology-content" style="display: none;">
+                    <h3>ROI Calculator Methodology</h3>
+                    
+                    <div class="methodology-section">
+                        <h4>1. Revenue Impact Calculations</h4>
+                        
+                        <div class="methodology-item">
+                            <h5>1.1 STAR Rating Revenue (Quality Bonus + Rebate)</h5>
+                            <p><strong>Formula:</strong></p>
+                            <code>
+                                STAR Improvement = Σ(Improvement% × Measure Weight)<br>
+                                Quality Bonus = Members × $14,000 × 5% (if crossing 4-star threshold)<br>
+                                Rebate Increase = Estimated Savings × (New Rebate% - Current Rebate%)
+                            </code>
+                            <p><strong>Key Assumptions:</strong></p>
+                            <ul>
+                                <li>CMS Quality Bonus: 5% of benchmark for plans ≥4.0 stars</li>
+                                <li>Rebate percentages: 3.5★=50%, 4.0★=65%, 4.5★=70% of savings</li>
+                                <li>Measure weights: Medication Adherence (0.12), AWV (0.08), Readmissions (0.06)</li>
+                                <li>Maximum STAR improvement capped at 0.5 stars</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="methodology-item">
+                            <h5>1.2 Member Retention Revenue</h5>
+                            <p><strong>Formula:</strong></p>
+                            <code>
+                                Retained Members = Total Members × Churn Rate × Churn Reduction%<br>
+                                Retention Revenue = Retained Members × (LTV - Acquisition Cost) / LTV Years
+                            </code>
+                            <p><strong>Key Assumptions:</strong></p>
+                            <ul>
+                                <li>Member Lifetime Value (LTV): $14,000 × 3.5 years = $49,000</li>
+                                <li>Acquisition cost: $750 per new member</li>
+                                <li>Plans typically backfill churned members, so we calculate net value</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="methodology-item">
+                            <h5>1.3 Annual Wellness Visit (AWV) Revenue</h5>
+                            <p><strong>Formula:</strong></p>
+                            <code>
+                                Additional AWVs = AWV-Engaged Members × AWV Improvement%<br>
+                                AWV Revenue = Additional AWVs × ($175 CMS payment + $1,500 HCC value)
+                            </code>
+                            <p><strong>Key Assumptions:</strong></p>
+                            <ul>
+                                <li>CMS payment per AWV: $175</li>
+                                <li>Average HCC risk adjustment value captured: $1,500</li>
+                                <li>60% of SMS-engaged members respond to AWV scheduling</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="methodology-section">
+                        <h4>2. Cost Savings Calculations</h4>
+                        
+                        <div class="methodology-item">
+                            <h5>2.1 Medication Adherence Savings</h5>
+                            <p><strong>Formula:</strong></p>
+                            <code>
+                                Eligible Members = Med-Engaged Members × 65% (chronic med prevalence)<br>
+                                Effective Improvement = Base Improvement × Diminishing Returns Factor<br>
+                                Savings = Eligible Members × Effective Improvement × $15 per point
+                            </code>
+                            <p><strong>Key Assumptions:</strong></p>
+                            <ul>
+                                <li>65% of Medicare members are on chronic medications</li>
+                                <li>$15 saved per percentage point improvement in adherence</li>
+                                <li>70% of SMS-engaged members respond to medication reminders</li>
+                                <li>Diminishing returns: 75% effectiveness above 75% baseline, 50% above 85%</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="methodology-item">
+                            <h5>2.2 Readmission Prevention</h5>
+                            <p><strong>Formula:</strong></p>
+                            <code>
+                                At-Risk Members = Discharge-Engaged Members × 20% (admission rate)<br>
+                                Baseline Readmissions = At-Risk Members × 18% (readmission rate)<br>
+                                Prevented Readmissions = Baseline × Readmission Reduction%<br>
+                                Savings = Prevented Readmissions × $15,000
+                            </code>
+                            <p><strong>Key Assumptions:</strong></p>
+                            <ul>
+                                <li>20% annual hospital admission rate</li>
+                                <li>18% 30-day readmission rate baseline</li>
+                                <li>$15,000 average cost per readmission</li>
+                                <li>80% of SMS-engaged members respond to discharge follow-ups</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="methodology-item">
+                            <h5>2.3 Care Team Efficiency</h5>
+                            <p><strong>Formula:</strong></p>
+                            <code>
+                                Hours Saved = Total Engaged Members × 2 hours/year<br>
+                                FTE Equivalent = Hours Saved / 2,080 hours<br>
+                                Savings = Hours Saved × $35/hour (fully loaded cost)
+                            </code>
+                            <p><strong>Key Assumptions:</strong></p>
+                            <ul>
+                                <li>2 hours saved annually per engaged member</li>
+                                <li>$35/hour fully loaded care team cost</li>
+                                <li>2,080 working hours per FTE annually</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="methodology-section">
+                        <h4>3. Engagement & Response Rates</h4>
+                        <div class="methodology-item">
+                            <p>Based on pilot data, different message types achieve different response rates:</p>
+                            <ul>
+                                <li><strong>Medication Reminders:</strong> 70% of overall engagement rate</li>
+                                <li><strong>AWV Scheduling:</strong> 60% of overall engagement rate</li>
+                                <li><strong>Post-Discharge Check-ins:</strong> 80% of overall engagement rate</li>
+                            </ul>
+                            <p>Example: If overall SMS engagement is 60%, then 42% respond to medication reminders, 36% complete AWV scheduling, and 48% respond to discharge follow-ups.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="methodology-section">
+                        <h4>4. Overlap Adjustments</h4>
+                        <div class="methodology-item">
+                            <p>To prevent double-counting benefits, we apply the following adjustments:</p>
+                            <ul>
+                                <li><strong>Adherence → Readmissions:</strong> 30% of adherence savings already prevent readmissions</li>
+                                <li><strong>STAR → Retention:</strong> 25% of STAR bonus value already captured in retention</li>
+                                <li><strong>AWV → Adherence:</strong> 15% of AWV value improves medication tracking</li>
+                            </ul>
+                            <code>Total Value = Revenue + Savings - Overlap Adjustments</code>
+                        </div>
+                    </div>
+                    
+                    <div class="methodology-section">
+                        <h4>5. Program Investment & ROI</h4>
+                        <div class="methodology-item">
+                            <p><strong>Anna Program Cost:</strong></p>
+                            <code>Annual Investment = Members × $1.00 PMPM × 12 months</code>
+                            
+                            <p><strong>Return on Investment:</strong></p>
+                            <code>
+                                Net Benefit = Total Value - Anna Investment<br>
+                                ROI% = (Net Benefit / Anna Investment) × 100
+                            </code>
+                        </div>
+                    </div>
+                    
+                    <div class="methodology-section">
+                        <h4>6. Scenario Modeling</h4>
+                        <div class="methodology-item">
+                            <table class="scenario-assumptions">
+                                <thead>
+                                    <tr>
+                                        <th>Metric</th>
+                                        <th>Conservative</th>
+                                        <th>Expected</th>
+                                        <th>Best Case</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Medication Adherence Improvement</td>
+                                        <td>5%</td>
+                                        <td>7.5%</td>
+                                        <td>10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AWV Completion Improvement</td>
+                                        <td>5%</td>
+                                        <td>10%</td>
+                                        <td>15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Readmission Reduction</td>
+                                        <td>5%</td>
+                                        <td>7.5%</td>
+                                        <td>10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Member Churn Reduction</td>
+                                        <td>10%</td>
+                                        <td>15%</td>
+                                        <td>20%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="methodology-section">
+                        <h4>7. Data Sources & References</h4>
+                        <div class="methodology-item">
+                            <ul>
+                                <li><strong>CMS STAR Ratings:</strong> <a href="https://www.cms.gov/medicare/health-drug-plans/part-c-d-performance-data" target="_blank">CMS Part C & D Performance Data</a></li>
+                                <li><strong>MA Payment Rates:</strong> Based on 2025 CMS Medicare Advantage ratebook</li>
+                                <li><strong>HCC Risk Adjustment:</strong> <a href="https://www.cms.gov/medicare/payment/medicare-advantage-rates-statistics/risk-adjustment" target="_blank">CMS Risk Adjustment methodology</a></li>
+                                <li><strong>Readmission Costs:</strong> Healthcare Cost and Utilization Project (HCUP) data</li>
+                                <li><strong>Medication Adherence Impact:</strong> Pharmacy Quality Alliance studies</li>
+                                <li><strong>Engagement Rates:</strong> Anna Health pilot program data (n=2,000 members)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="methodology-section">
+                        <h4>8. Limitations & Disclaimers</h4>
+                        <div class="methodology-item">
+                            <ul>
+                                <li>Results are estimates based on industry averages and pilot data</li>
+                                <li>Actual results will vary based on member population characteristics</li>
+                                <li>STAR rating improvements typically take 12-18 months to fully realize</li>
+                                <li>Some benefits may take multiple years to achieve</li>
+                                <li>Calculations assume consistent program engagement over time</li>
+                                <li>Does not account for potential competitive responses or market changes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -524,6 +765,7 @@
         </div>
     </footer>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
